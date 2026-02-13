@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Question 5</title>
+    </head>
+<body>
+    <h2>Array as a function arguement</h2>
+    <script>
+        function display(a){
+            for(var i = 0; i < a.length; i++){ 
+                document.write(a[i] + " "); 
+            }
+        }
+        var arr = new Array(10);
+        for(var i = 0; i < 10; i++){ 
+            arr[i] = i; 
+        }
+        display(arr);
+    </script>
+</body>
+</html>
