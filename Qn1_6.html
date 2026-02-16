@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Document</title>    
+    <head>
+<body>
+    <h2>Sorting and displaying Array</h2>
+    <div id="res"></div>
+    <script>
+        function sort(a) {
+            for (let i = 0; i < a.length; i++) {
+                for (let j = 0; j < a.length - 1; j++) {
+                    if (a[j] > a[j + 1]) {
+                        let temp = a[j];
+                        a[j] = a[j + 1];
+                        a[j + 1] = temp;
+                    }
+                }
+            }
+        }
+        function display(a) {
+            document.getElementById("res").innerText = a.join(", ");
+        }
+        var a = new Array(10, 30, 20, 50, 40);
+        sort(a);
+        display(a);
+    </script>
+</body>
+</html>

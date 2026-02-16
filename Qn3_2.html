@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <input type="text" id="userInput" placeholder="Enter a sentence">
+    <button onclick="processText()">Split</button>
+    <br><br>
+    
+    <textarea id="resultArea" rows="10" cols="30"></textarea>
+    <p id="subOutput"></p>
+
+    <script>
+        function processText() {
+            var input = document.getElementById("userInput").value;
+            var words = input.split(" ");
+            
+            document.getElementById("resultArea").value = words.join("\n");
+            document.getElementById("subOutput").innerText = "First 10 characters: " + input.substring(0, 10);
+        }
+    </script>
+</body>
+</html>

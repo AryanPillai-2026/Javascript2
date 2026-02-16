@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <p id="txt">Welcome to our website!</p>
+    <button onclick="changeText()">Click Me</button>
+
+    <script>
+        function changeText() {
+            var element = document.getElementById("txt");
+            
+            alert(element.innerText);
+            
+            element.innerHTML = "Thanks for coming!";
+        }
+    </script>
+</body>
+</html>

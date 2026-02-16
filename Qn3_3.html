@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html>
+<body>
+    <script>
+        var s1 = "Top of Page";
+        var s2 = "Blinking Text";
+        var s3 = "Monospaced Text";
+        var s4 = "Strikethrough";
+        var s5 = "Subscript";
+        var s6 = "Superscript";
+        var s7 = "Click Here";
+
+        document.writeln(s1.anchor("top") + "<br>");
+        document.writeln(s2.blink() + "<br>");
+        document.writeln(s3.fixed() + "<br>");
+        document.writeln(s4.strike() + "<br>");
+        document.writeln("Normal " + s5.sub() + "<br>");
+        document.writeln("Normal " + s6.sup() + "<br>");
+        document.writeln(s7.link("https://www.google.com") + "<br>");
+    </script>
+</body>
+</html>
